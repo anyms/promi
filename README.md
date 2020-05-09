@@ -1,5 +1,5 @@
 # Usage
 
 ```sh
-$ python promoter.py -run -accounts ./accounts.txt
+$ python promi.py -run -accounts ./accounts.txt
 ```
