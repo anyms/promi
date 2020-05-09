@@ -49,10 +49,10 @@ class Promoter:
 
     def promote(self, email, password):
         print("* Logging in...")
-        self.browser.get("https://facebook.com")
-        self.fill_input("input[type='email']", email)
-        self.fill_input("input[type='password']", password)
-        self.click("input[value='Log In']")
+        self.browser.get("https://facebook.com/login")
+        self.fill_input("#email", email)
+        self.fill_input("#pass", password)
+        self.click("#loginbutton")
         print("* Logged in as {}".format(email))
 
         sleep(5)
